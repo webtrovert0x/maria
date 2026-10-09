@@ -30,7 +30,7 @@ export async function GET() {
             coverImage: item.media_url || item.thumbnail_url || item.image || item.sizes?.large?.mediaUrl,
             galleryImages: [item.media_url || item.thumbnail_url || item.image],
             videoSrc: item.media_type === 'VIDEO' ? item.media_url : undefined,
-            description: item.caption || 'Custom made piece by Maria Loran (@tailored_by_maria).',
+            description: item.caption || 'Custom made piece by Maria Lórán (@tailored_by_maria).',
             materialDetails: 'High quality luxury fabric selected for client.',
             styleDetails: 'Tailored to custom client measurements.',
           }));

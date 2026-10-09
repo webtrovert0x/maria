@@ -55,7 +55,7 @@ export default function Footer() {
                     display: 'block',
                   }}
                 >
-                  MARIA LORAN
+                  MARIA LÓRÁN
                 </span>
                 <span style={{ fontSize: '0.65rem', textTransform: 'uppercase', color: 'var(--text-muted)', letterSpacing: '0.15em' }}>
                   Custom Tailoring & Design
@@ -104,17 +104,17 @@ export default function Footer() {
               Quick Navigation
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.7rem', fontSize: '0.86rem' }}>
-              <a href="#works" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }}>
-                Browse Gallery
+              <a href="/" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }}>
+                Home
               </a>
-              <a href="#about" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }}>
-                About Tailored by Maria
+              <a href="/about" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }}>
+                About
               </a>
-              <a href="#consultation" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }}>
-                Make a New Piece
+              <a href="/gallery" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }}>
+                Gallery
               </a>
-              <a href="#consultation" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }}>
-                Schedule a Fitting
+              <a href="/consultation" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }}>
+                Book Consultation / Fitting
               </a>
               <a
                 href="https://www.instagram.com/tailored_by_maria"
@@ -181,7 +181,7 @@ export default function Footer() {
           }}
         >
           <div>
-            © {new Date().getFullYear()} Maria Loran Tailoring. All rights reserved.
+            © {new Date().getFullYear()} Maria Lórán Tailoring. All rights reserved.
           </div>
           <div>
             Appointments & Fitting Services

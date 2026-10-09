@@ -107,7 +107,7 @@ export default function Hero() {
               fontWeight: 300,
             }}
           >
-            Welcome to Tailored by Maria. Specializing in bespoke bridal wear, AsoEbi dresses, dinner gowns, and tailored sets. Whether you want to make a brand new custom outfit or schedule a fitting for an existing order, book an appointment to visit our office.
+            Welcome to Maria Lórán. Specializing in bespoke bridal wear, AsoEbi dresses, dinner gowns, and tailored sets. Whether you want to make a brand new custom outfit or schedule a fitting for an existing order, book an appointment to visit our office.
           </p>
 
           {/* Buttons */}
@@ -121,14 +121,14 @@ export default function Hero() {
               marginBottom: '4.5rem',
             }}
           >
-            <button onClick={scrollToConsultation} className="btn-white">
+            <Link href="/consultation" className="btn-white">
               <span>Book Consultation / Fitting</span>
               <Scissors size={16} />
-            </button>
+            </Link>
 
             <Link href="/gallery" className="btn-outline-white" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.6rem' }}>
               <Camera size={16} />
-              <span>View All IG Photos & Reels</span>
+              <span>Explore Gallery</span>
               <ArrowUpRight size={14} />
             </Link>
           </div>

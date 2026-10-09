@@ -163,7 +163,7 @@ export default function ConsultationBooking() {
 
         {/* Card Box */}
         <div
-          className="glass-panel"
+          className="glass-panel consultation-card-wrapper"
           style={{
             maxWidth: '900px',
             margin: '0 auto',
@@ -256,7 +256,7 @@ export default function ConsultationBooking() {
                 <div>
                   <div style={{ fontSize: '0.72rem', textTransform: 'uppercase', color: 'var(--text-muted)' }}>Location</div>
                   <div style={{ fontWeight: 600, color: '#ffffff', marginTop: '2px' }}>
-                    Maria Loran Office
+                    Maria Lórán Office
                   </div>
                 </div>
 
@@ -310,73 +310,67 @@ export default function ConsultationBooking() {
           ) : (
             <>
               {/* Step Flow Tabs */}
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '2.5rem' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+              <div className="consultation-stepper">
+                <div className="step-item">
                   <div
+                    className="step-circle"
                     style={{
-                      width: '26px',
-                      height: '26px',
-                      borderRadius: '50%',
                       background: step >= 1 ? '#ffffff' : 'rgba(255, 255, 255, 0.1)',
                       color: step >= 1 ? '#000000' : '#ffffff',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontSize: '0.75rem',
-                      fontWeight: 700,
                     }}
                   >
                     1
                   </div>
-                  <span style={{ fontSize: '0.8rem', letterSpacing: '0.06em', textTransform: 'uppercase', color: step === 1 ? '#ffffff' : 'var(--text-muted)' }}>
+                  <span
+                    className="step-label"
+                    style={{
+                      color: step === 1 ? '#ffffff' : 'var(--text-muted)',
+                    }}
+                  >
                     Choose Purpose
                   </span>
                 </div>
 
-                <div style={{ flex: 1, height: '1px', background: 'var(--border-subtle)', margin: '0 1rem' }} />
+                <div className="step-connector" />
 
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                <div className="step-item">
                   <div
+                    className="step-circle"
                     style={{
-                      width: '26px',
-                      height: '26px',
-                      borderRadius: '50%',
                       background: step >= 2 ? '#ffffff' : 'rgba(255, 255, 255, 0.1)',
                       color: step >= 2 ? '#000000' : '#ffffff',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontSize: '0.75rem',
-                      fontWeight: 700,
                     }}
                   >
                     2
                   </div>
-                  <span style={{ fontSize: '0.8rem', letterSpacing: '0.06em', textTransform: 'uppercase', color: step === 2 ? '#ffffff' : 'var(--text-muted)' }}>
+                  <span
+                    className="step-label"
+                    style={{
+                      color: step === 2 ? '#ffffff' : 'var(--text-muted)',
+                    }}
+                  >
                     {bookingData.purpose === 'new_piece' ? 'Material & Style' : 'Fitting Details'}
                   </span>
                 </div>
 
-                <div style={{ flex: 1, height: '1px', background: 'var(--border-subtle)', margin: '0 1rem' }} />
+                <div className="step-connector" />
 
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                <div className="step-item">
                   <div
+                    className="step-circle"
                     style={{
-                      width: '26px',
-                      height: '26px',
-                      borderRadius: '50%',
                       background: step >= 3 ? '#ffffff' : 'rgba(255, 255, 255, 0.1)',
                       color: step >= 3 ? '#000000' : '#ffffff',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontSize: '0.75rem',
-                      fontWeight: 700,
                     }}
                   >
                     3
                   </div>
-                  <span style={{ fontSize: '0.8rem', letterSpacing: '0.06em', textTransform: 'uppercase', color: step === 3 ? '#ffffff' : 'var(--text-muted)' }}>
+                  <span
+                    className="step-label"
+                    style={{
+                      color: step === 3 ? '#ffffff' : 'var(--text-muted)',
+                    }}
+                  >
                     Date & Time
                   </span>
                 </div>
@@ -405,14 +399,14 @@ export default function ConsultationBooking() {
                   <div
                     style={{
                       display: 'grid',
-                      gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-                      gap: '1.8rem',
+                      gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+                      gap: '1.4rem',
                     }}
                   >
                     {/* Option 1: Making a new piece */}
                     <div
                       onClick={() => handleSelectPurpose('new_piece')}
-                      className="glass-panel-hover"
+                      className="glass-panel-hover consultation-option-card"
                       style={{
                         padding: '2.4rem 2rem',
                         borderRadius: '18px',
@@ -491,7 +485,7 @@ export default function ConsultationBooking() {
                     {/* Option 2: Coming for a fitting */}
                     <div
                       onClick={() => handleSelectPurpose('fitting')}
-                      className="glass-panel-hover"
+                      className="glass-panel-hover consultation-option-card"
                       style={{
                         padding: '2.4rem 2rem',
                         borderRadius: '18px',
@@ -884,7 +878,7 @@ export default function ConsultationBooking() {
                     >
                       <MapPin size={20} color="#ffffff" />
                       <div>
-                        <div style={{ fontWeight: 600, fontSize: '0.92rem', color: '#ffffff' }}>Location: Maria Loran Tailoring Office</div>
+                        <div style={{ fontWeight: 600, fontSize: '0.92rem', color: '#ffffff' }}>Location: Maria Lórán Tailoring Office</div>
                         <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
                           Consultations & fittings are conducted in person at our office by appointment.
                         </div>

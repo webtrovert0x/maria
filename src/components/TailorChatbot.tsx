@@ -36,7 +36,7 @@ export default function TailorChatbot() {
     {
       id: 'welcome-1',
       sender: 'bot',
-      text: 'Hello! Welcome to Maria Loran. How can I help you today? Whether you want to make a new custom outfit or book a fitting at our office, I am here to help.',
+      text: 'Hello! Welcome to Maria Lórán. How can I help you today? Whether you want to make a new custom outfit or book a fitting at our office, I am here to help.',
       time: 'Just now',
       quickActions: [
         {
@@ -261,7 +261,7 @@ export default function TailorChatbot() {
               </div>
               <div>
                 <div style={{ fontWeight: 600, fontSize: '0.9rem', color: '#ffffff' }}>
-                  Maria Loran Assistant
+                  Maria Lórán Assistant
                 </div>
                 <div style={{ fontSize: '0.72rem', color: 'var(--text-secondary)' }}>
                   Online • Ready to help

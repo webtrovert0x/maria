@@ -4,9 +4,9 @@ import CustomCursor from '@/components/CustomCursor';
 import TailorChatbot from '@/components/TailorChatbot';
 
 export const metadata: Metadata = {
-  title: 'Maria Loran — Custom Tailoring & Bespoke Fashion',
-  description: 'Custom tailoring, dresses, bespoke outfits, and fitting appointments with Maria Loran.',
-  keywords: ['Maria Loran', 'Tailor', 'Custom Clothing', 'Dressmaker', 'Bespoke Tailoring', 'Fitting Appointment']
+  title: 'Maria Lórán — Custom Tailoring & Bespoke Fashion',
+  description: 'Custom tailoring, dresses, bespoke outfits, and fitting appointments with Maria Lórán.',
+  keywords: ['Maria Lórán', 'Tailor', 'Custom Clothing', 'Dressmaker', 'Bespoke Tailoring', 'Fitting Appointment']
 };
 
 export default function RootLayout({

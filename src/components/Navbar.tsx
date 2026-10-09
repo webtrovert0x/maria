@@ -20,10 +20,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks: { label: string; href: string; external?: boolean }[] = [
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' },
     { label: 'Gallery', href: '/gallery' },
-    { label: 'About', href: '/#about' },
-    { label: 'Book Consultation / Fitting', href: '/#consultation' },
-    
+    { label: 'Book Consultation / Fitting', href: '/consultation' },
   ];
 
   return (
@@ -80,7 +80,7 @@ export default function Navbar() {
               />
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <div>
               <span
                 className="font-serif-title"
                 style={{
@@ -91,19 +91,7 @@ export default function Navbar() {
                   color: '#ffffff',
                 }}
               >
-                MARIA LORAN
-              </span>
-              <span
-                style={{
-                  fontSize: '0.65rem',
-                  letterSpacing: '0.15em',
-                  textTransform: 'uppercase',
-                  color: 'var(--text-secondary)',
-                  fontWeight: 500,
-                  marginTop: '2px',
-                }}
-              >
-                Bridal & AsoEbi Tailor
+                MARIA LÓRÁN
               </span>
             </div>
           </a>
@@ -145,7 +133,7 @@ export default function Navbar() {
           {/* Action Button */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
             <a
-              href="#consultation"
+              href="/consultation"
               className="btn-white"
               style={{
                 display: 'none',

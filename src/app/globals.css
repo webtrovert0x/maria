@@ -290,3 +290,88 @@ body {
 .animate-fade-in {
   animation: fadeIn 0.4s ease-out forwards;
 }
+
+/* Consultation Responsive Stepper & Cards */
+.consultation-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.step-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.step-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.step-connector {
+  flex: 1;
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 0 1rem;
+  min-width: 12px;
+}
+
+@media (max-width: 640px) {
+  .consultation-card-wrapper {
+    padding: 1.5rem 1rem !important;
+    border-radius: 16px !important;
+  }
+
+  .consultation-stepper {
+    margin-bottom: 2rem;
+    gap: 0.25rem;
+  }
+
+  .step-item {
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .step-connector {
+    margin: 0 0.2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .step-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.02em;
+    white-space: normal;
+    line-height: 1.2;
+    text-align: center;
+    display: block;
+  }
+
+  .consultation-option-card {
+    padding: 1.6rem 1.2rem !important;
+  }
+}

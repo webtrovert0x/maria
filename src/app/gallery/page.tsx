@@ -569,7 +569,7 @@ export default function FullGalleryPage() {
 
                 <div style={{ display: 'flex', gap: '0.8rem', flexWrap: 'wrap' }}>
                   <Link
-                    href="/#consultation"
+                    href="/consultation"
                     onClick={() => setActiveMedia(null)}
                     className="btn-white"
                     style={{ fontSize: '0.8rem', padding: '0.7rem 1.3rem' }}
